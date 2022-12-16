@@ -21,7 +21,20 @@ body {
     margin-left: 20px;
     color: #fff;
     margin-top: 4vh;
-    cursor: pointer;
+   
+}
+
+
+.filtrar-Prodcutos{
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    width: 220px;
+    height: 10px;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: solid 1px #f8e4e4;
+    
 }
 
 .ver-carrito {
@@ -77,10 +90,20 @@ body {
     font-family: arial;
 }
 
+.cardProductoSinstock {
+    box-shadow: 0 4px 8px 0 rgba(231, 4, 4, 0.863);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+
 .cardProducto > img {
     width: 90%;
     height: 250px;
 } 
+
 
 .precio {
     color: grey;
@@ -108,9 +131,9 @@ body {
 .modal-container{
     width: 80%;
     margin: 0 10%;
-    max-height: 88vh;
-    color: #fff;
-    background-color: #121212;
+    max-height: 60vh;
+    color: rgb(244, 242, 247);
+    background-color:#021a25;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +144,7 @@ body {
     top: 12vh;
 }
 
+/*para que no se vea la barra scroll*/
 .modal-container::-webkit-scrollbar {
     display: none;
 }
@@ -128,36 +152,77 @@ body {
 .modal-header {
     display: flex;
     justify-content: space-around;
-    background-color: #0a0909;
-    color: #fff;
+    background-color: #023349;
     width: 100%;
 }
 
 .modal-header-title{
-    justify-self: start;
+     color: #e64e4e;
 }
 
 .modal-header-button{
-    justify-self: start;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer
+
 }
 
-.modal-container > .carrito-content{
+.modal-container > .carrito-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 70%;
     margin: 10px;
+   
 }
 
 .modal-container >div >img {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
 }
 
 .total-content {
     font-size: 25px;
     padding: 20px;
     text-align: center;
-    padding: 20px;
+    color:  #fffbfb;
 }
+
+.delete-product {
+    cursor: pointer;
+}
+
+
+.boton-comprar{
+   
+    padding: 20px;
+    text-align: center;
+ 
+}
+
+.comprar-product{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background: #db1818;
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(243, 235, 235);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+ 
+    position: relative;
+    overflow: hidden;
+
+}
+
+.comprar-product:hover{
+    background-color: #363106;
+}
+
